@@ -1,0 +1,394 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;;
+}
+
+/* -------------------------------------- HOME HEADER ---------------------------------------*/
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #3d5a80;  
+}
+
+.logo {
+    width: 80px;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #98c1d9;
+}
+
+nav a{
+    text-align: center;
+    color: #3d5a80;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #3d5a80;
+    color: #ee6c4d;
+}
+
+/* ---------------------------------------------- HOME HERO ---------------------------------------------*/
+
+.home-title {
+    color: #3d5a80;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #3d5a80;
+    margin: 0;
+   
+}
+
+h1, h4 {
+    text-align: center;
+    color: #3d5a80;
+
+}
+.book, .join {
+    background-color: #e0fbfc;
+    color: #3d5a80;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.book:hover, .join:hover {
+    background-color: #ee6c4d;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+
+}
+
+#hero-msg h4 {
+    color: #FFFFFF;
+}
+
+#hero-img {
+    width: 100%;
+}
+#hero-msg h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+/* ---------------------------------------------- HOME MAIN ---------------------------------------------*/
+
+
+/* ---------------- HOME MAIN GRID ------------------*/
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3; 
+}
+
+main section {
+    text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+#background {
+    height: 725px;
+    background-color: #98c1d9;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+.mountains {
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #ee6c4d;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+} 
+
+.card-img {
+    border: 10px solid #3d5a80;
+    transition: transform 0.5s;
+}
+
+.card-img:hover {
+    opacity: .6;    
+    transform: scale(1.1);
+}
+
+.card-img, .mountains {
+    width: 100%;
+}
+
+.msg {
+    background-color: #3d5a80;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #ee6c4d;
+}
+
+.msg h2 {
+    color: #FFFFFF;
+}
+
+.msg p {
+    color: #FFFFFF;
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #3d5a80;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: #e0fbfc;
+    text-decoration: none;  
+}
+
+footer a:hover {
+    background-color: #3d5a80;
+    color: #ee6c4d
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+
+/* ----------------------------------------      RIVERS PAGE    -------------------------------------*/
+/* --------------------------------------------------------------------------------------------------*/
+#river-main {
+    margin: 0 50px;
+}
+
+.first-paragraph, .second-paragraph, .third-paragraph {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#river-main p {
+    font-size: 20px;
+    color: #3d5a80;
+    line-height: 1.5;
+
+}
+
+#river-heading {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.rivers-main-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 90px;
+    margin: 0 15px;
+    align-content: center;
+}
+
+/*--------------------------- FIRST RIVER(child 1 ------------------------*/
+
+
+.first-river {
+    grid-column: 1/6;
+    grid-row: 1/3;
+}
+
+.first-river-img {
+    margin: 0 20px 45px 0;
+    float: left;
+    border: solid 3px transparent;
+    background-image: linear-gradient(white, white), linear-gradient(315deg,#833ab4,#fd1d1d 50%,#fcb045);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#title1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*--------------------------- SECOND RIVER(child 2 ------------------------*/
+
+.second-river {
+    grid-column: 1/6;
+    grid-row: 3/5;
+}
+
+.second-river-img {
+    margin: 0 0 45px 20px;
+    float: right;
+    border: solid 3px transparent;
+    background-image: linear-gradient(white, white), linear-gradient(315deg,#833ab4,#fd1d1d 50%,#fcb045);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#title2 {
+    grid-column: 5/6;
+    grid-row: 4/5;
+    text-align: right;
+    margin: 0;
+}
+
+/*--------------------------- THIRD RIVER(child 3 ------------------------*/
+
+.third-river {
+    grid-column: 1/6;
+    grid-row: 5/6;
+}
+
+.third-river-img {
+    margin: 0 20px 50px 0;
+    float: left;
+    border: solid 3px transparent;
+    background-image: linear-gradient(white, white), linear-gradient(315deg,#833ab4,#fd1d1d 50%,#fcb045);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#title3 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    text-align: left;
+    margin: 310px 0 0 0;
+   
+}
+
+
+
+
+/*---------------------------------------------  MEDIA QUERY ---------------------------------------*/
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+  
+}
